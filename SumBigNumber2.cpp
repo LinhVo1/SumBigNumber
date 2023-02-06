@@ -3,26 +3,26 @@
  
 using namespace std;
  
-int stringToNum(char c)     
+int thanhSo(char c)     
 {
     return c - '0';
 }
  
-char numToString(int n)     
+char thanhKyTu(int n)     
 {
     return (char)(n + 48);
 }
  
 void doDai(string &a, string &b) 
 {
-    int l1 = a.length(), l2 = b.length();
-    if (l1 >= l2)
+    int length1 = a.length(), length2 = b.length();
+    if (length1 >= length2)
     {
-        b.insert(0, l1 - l2, '0');    
+        b.insert(0, length1 - length2, '0');    
     }
     else
     {
-        a.insert(0, l2 - l1, '0');    
+        a.insert(0, length2 - length1, '0');    
     }
 }
  
